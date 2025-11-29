@@ -6,4 +6,5 @@ public class ApiConstants {
     //enpoints
 
     public static final String AUTH_BASE = API_VERSION +"/auth";
+    public static final String UPDATER_BASE = API_VERSION + "/updater";
 }

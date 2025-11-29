@@ -1,13 +1,13 @@
-package com.api.fareupdater.controller;
+package com.api.fareupdater.authentication.controller;
 
 import com.api.fareupdater.common.constants.ApiConstants;
 import com.api.fareupdater.common.constants.HttpConstants;
 import com.api.fareupdater.common.security.JwtTokenUtil;
 import com.api.fareupdater.common.utils.ErrorMessage;
-import com.api.fareupdater.dto.request.LoginRequest;
-import com.api.fareupdater.dto.response.LoginResponse;
-import com.api.fareupdater.entity.UserEntity;
-import com.api.fareupdater.service.AuthService;
+import com.api.fareupdater.authentication.dto.request.LoginRequest;
+import com.api.fareupdater.authentication.dto.response.LoginResponse;
+import com.api.fareupdater.authentication.entity.UserEntity;
+import com.api.fareupdater.authentication.service.AuthService;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

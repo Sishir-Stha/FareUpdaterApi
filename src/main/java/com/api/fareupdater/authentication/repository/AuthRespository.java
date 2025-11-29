@@ -1,6 +1,6 @@
-package com.api.fareupdater.repository;
+package com.api.fareupdater.authentication.repository;
 
-import com.api.fareupdater.entity.UserEntity;
+import com.api.fareupdater.authentication.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

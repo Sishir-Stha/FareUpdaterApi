@@ -1,4 +1,4 @@
-package com.api.fareupdater.dto.request;
+package com.api.fareupdater.authentication.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

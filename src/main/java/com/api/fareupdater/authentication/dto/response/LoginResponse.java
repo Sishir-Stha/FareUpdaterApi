@@ -1,9 +1,7 @@
-package com.api.fareupdater.dto.response;
+package com.api.fareupdater.authentication.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.lang.ref.PhantomReference;
 
 @Data
 @AllArgsConstructor
