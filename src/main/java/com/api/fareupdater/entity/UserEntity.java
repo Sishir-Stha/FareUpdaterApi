@@ -3,7 +3,6 @@ package com.api.fareupdater.entity;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jdk.jfr.Enabled;
 import lombok.Data;
 
 @Entity
@@ -12,7 +11,7 @@ public class UserEntity {
 
     @Id
     @Column(name = "user_logon")
-    private String userName;
+    private String username;
 
     @Column(name = "user_password")
     private String password;
