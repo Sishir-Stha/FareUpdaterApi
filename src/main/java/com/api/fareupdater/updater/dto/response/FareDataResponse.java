@@ -4,7 +4,7 @@ import jakarta.annotation.Nullable;
 import lombok.Data;
 
 @Data
-public class FareData {
+public class FareDataResponse {
 
     private String fareId;
     private String sector;

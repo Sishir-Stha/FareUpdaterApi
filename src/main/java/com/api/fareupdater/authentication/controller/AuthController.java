@@ -39,7 +39,7 @@ public class AuthController {
             }
         }catch (Exception e){
             log.error("Error occurred during login for user: {}", request.getUsername(), e);
-            return ResponseEntity.status(HttpConstants.INTERNAL_SERVER_ERROR).body(new ErrorMessage(401,"Server Error "));
+            return ResponseEntity.status(HttpConstants.INTERNAL_SERVER_ERROR).body(new ErrorMessage(500,"Server Error "));
         }
     }
 }
