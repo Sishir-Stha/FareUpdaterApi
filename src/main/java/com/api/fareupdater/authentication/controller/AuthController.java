@@ -32,7 +32,7 @@ public class AuthController {
             if (reponse != null){
                 log.info("<<Auth logging Request recieved>>");
                 String token = JwtTokenUtil.generateToken(reponse.getUserId());
-                return ResponseEntity.ok(new LoginResponse(200,token, reponse.getUsername(), reponse.getUserCode()));
+                return ResponseEntity.ok(new LoginResponse(200,token, reponse.getUsername(), reponse.getUserId()));
             }else{
                 log.debug("User is null ( Invalid user or credentials )");
                 return ResponseEntity.status(HttpConstants.INVALID_CREDENTIALS).body(new ErrorMessage(401,"Invalid Credentials"));

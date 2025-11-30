@@ -47,7 +47,7 @@ More features will be added soon.
 - Started work on Fare data retireve endpoint
 - Managed the project structure
 - The fare Data retrived endpoint complete and integrated in front end - [ First commit of day ]
-
+- The fare Update endpoint competed and integrated with the frontend -[ Last Commit of the day]
 
 📄 License
 
