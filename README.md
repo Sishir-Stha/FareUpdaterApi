@@ -30,6 +30,10 @@ Maven
     2. Initial API structure ( Auth Controller < service < repo )
 
     3. Added JWT token Security and Security Config 
+      
+    4. Added the Stucture for Auth and Updater and Common
+
+    5. User can Update the Fare or Copy and create a New Fare 
 
 More features will be added soon.
 
@@ -40,6 +44,8 @@ More features will be added soon.
 - Project started and stated to code for authentication 
 - Added the JWT security protocols
 - created and finished the endpoints from login i.e for this project only login is needed
+- Added endpoint for updating the fares 
+- Added security system and SSL for https but not pushed in the git 
 
 
 ### 11/30/2025
@@ -48,6 +54,11 @@ More features will be added soon.
 - Managed the project structure
 - The fare Data retrived endpoint complete and integrated in front end - [ First commit of day ]
 - The fare Update endpoint competed and integrated with the frontend -[ Last Commit of the day]
+
+## 12/01/2025
+
+- Final work done and pushed in the server as service 
+- Project closed but given to QA for review
 
 📄 License
 
