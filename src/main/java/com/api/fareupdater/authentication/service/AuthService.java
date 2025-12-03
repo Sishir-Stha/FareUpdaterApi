@@ -1,9 +1,8 @@
-package com.api.fareupdater.service;
+package com.api.fareupdater.authentication.service;
 
-import com.api.fareupdater.dto.response.LoginResponse;
-import com.api.fareupdater.entity.UserEntity;
-import com.api.fareupdater.mapper.AuthEntityToDto;
-import com.api.fareupdater.repository.AuthRespository;
+import com.api.fareupdater.authentication.entity.UserEntity;
+import com.api.fareupdater.authentication.mapper.AuthEntityToDto;
+import com.api.fareupdater.authentication.repository.AuthRespository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

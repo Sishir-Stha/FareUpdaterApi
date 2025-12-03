@@ -1,4 +1,4 @@
-package com.api.fareupdater.entity;
+package com.api.fareupdater.authentication.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
