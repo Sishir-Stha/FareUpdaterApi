@@ -1,12 +1,12 @@
 FareUpdater API
 
 A backend service for managing and updating transportation fares.
-This project is currently under development.
+This project is developed and deployed
 
 🚀 Status
 
-Project Stage: Early Development
-More features and documentation will be added as the project grows.
+Project Stage: Developed and deployed
+More features and documentation will be added as the per clients requirement.
 
 📌 Tech Stack
 
