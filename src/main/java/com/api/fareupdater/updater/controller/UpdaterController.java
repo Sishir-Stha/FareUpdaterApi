@@ -44,13 +44,12 @@ public class UpdaterController {
 
     @PutMapping("/updateFare")
     public ResponseEntity<?> updatefare(@Valid @RequestBody UpdateFareRequest request){
-        int noOfFareId = request.getFareid().size();
         int updatedCount = 0;
         int failedcount =0;
         for( String fareId  : request.getFareid()){
             try{
 
-                boolean isUpdated = updaterService.updateFare(fareId,request.getFlightdatefrom(),request.getFlightdateto(),request.getFareamount(),request.getValidonflight(),request.getUserlogon(),request.getActiontype());
+                boolean isUpdated = updaterService.updateFare(fareId,request.getFlightdatefrom(),request.getFlightdateto(),request.getFareamount(),request.getValidonflight(),request.getUserlogon(),request.getActiontype(),request.getStatus());
                 if (isUpdated){
                     updatedCount++;
                     log.info("Fare of Fare id  : "+  fareId +" is updated");

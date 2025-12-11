@@ -30,5 +30,4 @@ public class FareEntity {
 
     @Column(name = "valid_on_flight",nullable = true)
     private String ValidOnFlight;
-
 }

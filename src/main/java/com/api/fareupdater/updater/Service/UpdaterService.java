@@ -32,9 +32,9 @@ public class UpdaterService {
 
     public boolean updateFare(String fareid, Date flightdatefrom, Date flightdateto,
                               double fareamount, String validOnFlight,
-                              String userlogon,  String actiontype){
+                              String userlogon,  String actiontype, String status){
 
-        ResultEntity result = updaterRepository.updateFareData(fareid, flightdatefrom, flightdateto, fareamount, validOnFlight, userlogon, actiontype);
+        ResultEntity result = updaterRepository.updateFareData(fareid, flightdatefrom, flightdateto, fareamount, validOnFlight, userlogon, actiontype,status);
 
         int isTrue = result.getResult();
         if(isTrue == 1){

@@ -59,6 +59,11 @@ More features will be added soon.
 
 - Final work done and pushed in the server as service 
 - Project closed but given to QA for review
+- 
+## 12/10/2025
+
+- Chnages made according to QA 
+- Added the status in the update query and updated authentication to only allow the user of Revenue department to access 
 
 📄 License
 

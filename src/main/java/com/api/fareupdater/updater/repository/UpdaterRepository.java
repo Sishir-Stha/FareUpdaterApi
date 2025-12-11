@@ -5,7 +5,6 @@ import com.api.fareupdater.updater.Entity.ResultEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Date;
 import java.util.List;
@@ -19,7 +18,7 @@ public interface UpdaterRepository extends JpaRepository<FareEntity , String> {
                                  @Param("flightDate") String flightDate,
                                  @Param("currency") String currency);
 
-    @Query(value = "EXEC uspFareChange_umn :fareid, :flightdatefrom, :flightdateto, :fareamount, :validOnFlight, :userlogon, :actionType",
+    @Query(value = "EXEC uspFareChange_umn :fareid, :flightdatefrom, :flightdateto, :fareamount, :validOnFlight, :userlogon, :actionType ,:status ; ",
             nativeQuery = true)
     ResultEntity updateFareData(@Param("fareid") String fareid,
                            @Param("flightdatefrom") Date flightdatefrom,
@@ -27,7 +26,8 @@ public interface UpdaterRepository extends JpaRepository<FareEntity , String> {
                            @Param("fareamount") double fareamount,
                            @Param("validOnFlight") String validOnFlight,
                            @Param("userlogon") String userlogon,
-                           @Param("actionType") String actionType);
+                           @Param("actionType") String actionType,
+                           @Param("status")String status);
 
 
 
