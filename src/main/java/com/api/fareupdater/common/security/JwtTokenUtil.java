@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class JwtTokenUtil {
 
-    private static final String SECRET_KEY = System.getenv("JWT_SECRET_KEY") != null ? System.getenv("JWT_SECRET_KEY") : "aGVsbG9Xb3JsZDEyMzQ1N2RhdGFiYXNlZGtleW9yZGVyYXNwbmVpbnRhZXN1Y2t5c29yZXN0NNDNuhhFUYR6fgjJGKHKjkhougj87TKU";
+    private static final String SECRET_KEY = System.getenv("JWT_SECRET_KEY") != null ? System.getenv("JWT_SECRET_KEY") : {JWT SECURITY KEY};
 
     private static final long EXPIRATION_TIME = System.getenv("JWT_EXPIRATION_TIME") != null
             ? Long.parseLong(System.getenv("JWT_EXPIRATION_TIME")) : 1000 * 60 * 60* 12;
